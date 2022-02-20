@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: bold; */
+    color: black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    color: white;
+    background-color: #22D3EE;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 4fr 8fr;
+    font-size: 1.3rem;
+    gap: 30px;
+}
+
+
+
+.sidebar .title img {
+    height: 55px;
+    width: 55px;
+}
+
+.sidebar
+.title,
+#home, 
+#profile,
+#messages,
+#history,
+#tasks,
+#communities,
+#settings,
+#support,
+#privacy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.sidebar
+.title,
+#home, 
+#profile,
+#messages,
+#history,
+#tasks,
+#communities,
+#settings,
+#support,
+#privacy img {
+    margin-bottom: 2px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7477%) hue-rotate(98deg) brightness(104%) contrast(101%);
+}
+
+.sidebar .title {
+    align-self: flex-start;
+    margin-right: 5px;
+    font-size: 2rem;
+    padding-left: 15px;
+    gap: 9px;
+}
+
+.navigation, .sub-navigation {
+    padding-left: 30px;
+}
+
+.header {
+    background-color: white;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 15px 40px 0px;
+}
+
+.top-sub-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.top-sub-header .search-bar {
+    justify-self: start;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.top-sub-header .search-bar img {
+    width: 22px;
+    height: 28px;
+}
+
+.search-bar input {
+    background-color: #ECFEFF;
+    height: 10px;
+    width: 600px;
+    border-radius: 14px;
+    border-style: none;
+    padding: 10px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    background-color: #CFFAFE;
+}
+
+.profile-settings {
+    display: flex;
+    justify-self: flex-end;
+    gap: 25px;
+    padding-right: 70px;
+}
+
+.profile-settings img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.profile-settings .photo {
+    background-image: url(icons/avatar-alien.png);
+    background-size: 100%;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+
+.profile-settings .photo:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.profile-settings p {
+    align-self: center;
+    font-size: 1.07rem;
+}
+
+.bot-sub-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
+    align-items: center;
+    padding: 15px 0px 5px;
+}
+
+.bot-sub-header .profile-review .photo {
+    background-image: url(icons/avatar-alien.png);
+    background-size: 100%;
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+}
+
+.bot-sub-header .profile-review {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 22px;
+}
+
+.bot-sub-header .profile-review .text-area {
+    align-self: center;
+}
+
+.bot-sub-header .profile-review .text-area p {
+
+}
+
+.bot-sub-header .profile-review .text-area .first-text {
+    margin-left: -1px;
+    font-size: 0.8rem;
+}
+
+.bot-sub-header .profile-review .text-area .second-text {
+    font-size: 1.4rem;
+}
+
+.bot-sub-header .buttons {
+    display: flex;
+    margin: 0 auto;
+    gap: 25px;
+}
+
+.bot-sub-header #button1, #button2, #button3 {
+    background-color: #22D3EE;
+    width: 100px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.bot-sub-header #button1:hover, #button2:hover, #button3:hover {
+    opacity: .8;
+}
+
+.bot-sub-header #button1:active, #button2:active, #button3:active {
+    opacity: .5;
+}
+
+
+.main-content {
+    background-color: #E5E7EB;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:hover {
+    opacity: .8;
+    cursor: pointer;
+}
