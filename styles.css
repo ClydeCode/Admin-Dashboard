@@ -228,7 +228,7 @@ html {
 .main-content {
     background-color: #E5E7EB;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 20px;
     overflow: scroll;
 }
@@ -242,7 +242,7 @@ html {
 
 .main-content .first-column .container-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 380px */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 380px */
     row-gap: 30px;
 }
 
@@ -260,7 +260,7 @@ html {
     color: grey;
     font-weight: 400;
     font-size: .9rem;
-    width: 260px;
+    width: 95%; /* 260px*/
 }
 
 .first-column .container .icons {
@@ -274,7 +274,7 @@ html {
 
 .first-column .container {
     background-color: white;
-    width: 255px;
+    width: 80%; /*270px*/
     height: 160px;
     border-radius: 6px;
     box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.1);
@@ -294,10 +294,20 @@ html {
     justify-items: center;
 }
 
+.first-row p {
+    position: relative;
+    right: 80px;
+}
+
+.second-row p {
+    position: relative;
+    right: 113px;
+}
+
 .second-column .first-row .container {
     background-color: white;
     height: 300px;
-    width: 230px;
+    width: 250px; 
     border-radius: 6px;
     box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.1);
     display: grid;
@@ -320,6 +330,22 @@ html {
     font-weight: 400;
     font-size: .83rem;
     width: 210px;
+    position: relative;
+}
+
+.first-row .container .first-row .content::after , .second-row .content::after {
+    margin: 12px auto 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 230px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    right: -10px;
+}
+
+.container .first-row, .second-row {
+    margin-bottom: 30px;
 }
 
 .second-column .second-row .container {
